@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "updatedAt": "2026-07-14",
+  "version": "1.1.0",
+  "updatedAt": "2026-07-15",
   "providers": {
     "qwen": {
       "displayName": "阿里通义千问",
@@ -32,47 +32,47 @@
     "glm": {
       "displayName": "智谱GLM",
       "displayNameZh": "智谱GLM",
-      "format": "openai",
+      "format": "zhipu",
       "domains": ["open.bigmodel.cn"],
       "models": {
-        "glm-5":              { "inputPrice": 0.00096, "outputPrice": 0.0039, "unit": "per_1k" },
-        "glm-4-plus":         { "inputPrice": 0.0007, "outputPrice": 0.00035, "unit": "per_1k" },
-        "glm-4-air":          { "inputPrice": 0.00007, "outputPrice": 0.000035, "unit": "per_1k" },
-        "glm-4-flash":        { "inputPrice": 0.000014, "outputPrice": 0.000014, "unit": "per_1k" },
-        "glm-z1-flashx":      { "inputPrice": 0.000014, "outputPrice": 0, "unit": "per_1k" },
-        "glm-4.7-flash":      { "inputPrice": 0, "outputPrice": 0, "unit": "per_1k" }
+        "glm-5":       { "inputPrice": 0.002, "outputPrice": 0.002, "unit": "per_1k" },
+        "glm-5-flash": { "inputPrice": 0.0005, "outputPrice": 0.0005, "unit": "per_1k" },
+        "glm-5-air":   { "inputPrice": 0.001, "outputPrice": 0.001, "unit": "per_1k" },
+        "glm-4-plus":  { "inputPrice": 0.005, "outputPrice": 0.005, "unit": "per_1k" },
+        "glm-4v-plus": { "inputPrice": 0.01, "outputPrice": 0.01, "unit": "per_1k" },
+        "glm-4-air":   { "inputPrice": 0.001, "outputPrice": 0.001, "unit": "per_1k" }
       }
     },
     "kimi": {
       "displayName": "月之暗面Kimi",
       "displayNameZh": "月之暗面Kimi",
-      "format": "openai",
+      "format": "moonshot",
       "domains": ["api.moonshot.cn"],
       "models": {
-        "kimi-k2.5":                 { "inputPrice": 0.0023, "outputPrice": 0.007, "unit": "per_1k" },
-        "kimi-k2-turbo-preview":     { "inputPrice": 0.0012, "outputPrice": 0.0035, "unit": "per_1k" },
-        "moonshot-v1-128k":          { "inputPrice": 0.008, "outputPrice": 0.024, "unit": "per_1k" },
-        "moonshot-v1-32k":           { "inputPrice": 0.002, "outputPrice": 0.006, "unit": "per_1k" },
-        "moonshot-v1-8k":            { "inputPrice": 0.001, "outputPrice": 0.003, "unit": "per_1k" }
+        "kimi-k2.6":     { "inputPrice": 0.00066, "outputPrice": 0.00341, "unit": "per_1k" },
+        "kimi-k2.5":     { "inputPrice": 0.0006, "outputPrice": 0.002, "unit": "per_1k" },
+        "moonshot-v1-8k":  { "inputPrice": 0.012, "outputPrice": 0.012, "unit": "per_1k" },
+        "moonshot-v1-32k": { "inputPrice": 0.024, "outputPrice": 0.024, "unit": "per_1k" },
+        "moonshot-v1-128k":{ "inputPrice": 0.06, "outputPrice": 0.06, "unit": "per_1k" }
       }
     },
     "doubao": {
       "displayName": "字节豆包",
       "displayNameZh": "字节豆包",
-      "format": "openai",
-      "domains": ["ark.cn-beijing.volces.com"],
+      "format": "doubao",
+      "domains": ["ark.cn-beijing.volces.com", "doubao.com"],
       "models": {
-        "doubao-pro-128k":  { "inputPrice": 0.0007, "outputPrice": 0.0014, "unit": "per_1k" },
-        "doubao-pro-32k":   { "inputPrice": 0.0005, "outputPrice": 0.001, "unit": "per_1k" },
-        "doubao-pro-4k":    { "inputPrice": 0.0003, "outputPrice": 0.0006, "unit": "per_1k" },
-        "doubao-lite-128k": { "inputPrice": 0.00035, "outputPrice": 0.0007, "unit": "per_1k" },
-        "doubao-lite-32k":  { "inputPrice": 0.00025, "outputPrice": 0.0005, "unit": "per_1k" }
+        "doubao-1.5-pro-256k":   { "inputPrice": 0.005, "outputPrice": 0.009, "unit": "per_1k" },
+        "doubao-1.5-pro-32k":    { "inputPrice": 0.0008, "outputPrice": 0.002, "unit": "per_1k" },
+        "doubao-1.5-lite-32k":   { "inputPrice": 0.0003, "outputPrice": 0.0006, "unit": "per_1k" },
+        "doubao-1.5-thinking":   { "inputPrice": 0.004, "outputPrice": 0.006, "unit": "per_1k" },
+        "doubao-pro-4k":         { "inputPrice": 0.0008, "outputPrice": 0.002, "unit": "per_1k" }
       }
     },
     "deepseek": {
       "displayName": "DeepSeek",
       "displayNameZh": "DeepSeek",
-      "format": "openai",
+      "format": "deepseek",
       "domains": ["api.deepseek.com"],
       "models": {
         "deepseek-chat":    { "inputPrice": 0.00027, "outputPrice": 0.0011, "unit": "per_1k" },
@@ -80,73 +80,73 @@
         "deepseek-reasoner":{ "inputPrice": 0.00055, "outputPrice": 0.00219, "unit": "per_1k" },
         "deepseek-r1":      { "inputPrice": 0.00055, "outputPrice": 0.00219, "unit": "per_1k" },
         "deepseek-v3":      { "inputPrice": 0.00027, "outputPrice": 0.0011, "unit": "per_1k" },
-        "deepseek-v2":      { "inputPrice": 0.00014, "outputPrice": 0.00028, "unit": "per_1k" }
+        "deepseek-v4":      { "inputPrice": 0.00044, "outputPrice": 0.00087, "unit": "per_1k" }
       }
     },
     "minimax": {
       "displayName": "MiniMax",
       "displayNameZh": "MiniMax",
-      "format": "openai",
+      "format": "minimax",
       "domains": ["api.minimax.chat"],
       "models": {
-        "abab-6.5": { "inputPrice": 0.001, "outputPrice": 0.002, "unit": "per_1k" },
-        "abab-5.5": { "inputPrice": 0.00015, "outputPrice": 0.00015, "unit": "per_1k" }
+        "minimax-m2.7":   { "inputPrice": 0.0003, "outputPrice": 0.0012, "unit": "per_1k" },
+        "abab-7b":        { "inputPrice": 0.0001, "outputPrice": 0.0003, "unit": "per_1k" }
       }
     },
     "yi": {
       "displayName": "零一万物Yi",
       "displayNameZh": "零一万物Yi",
-      "format": "openai",
+      "format": "lingyiwanwu",
       "domains": ["api.lingyiwanwu.com"],
       "models": {
-        "yi-lightning": { "inputPrice": 0.0004, "outputPrice": 0.001, "unit": "per_1k" },
-        "yi-medium":    { "inputPrice": 0.0012, "outputPrice": 0.003, "unit": "per_1k" },
-        "yi-large":     { "inputPrice": 0.003, "outputPrice": 0.006, "unit": "per_1k" }
+        "yi-lightning":   { "inputPrice": 0.0005, "outputPrice": 0.001, "unit": "per_1k" },
+        "yi-large":       { "inputPrice": 0.001, "outputPrice": 0.002, "unit": "per_1k" },
+        "yi-large-turbo": { "inputPrice": 0.0006, "outputPrice": 0.0015, "unit": "per_1k" }
       }
     },
     "baichuan": {
-      "displayName": "百川",
-      "displayNameZh": "百川",
-      "format": "openai",
+      "displayName": "百川智能",
+      "displayNameZh": "百川智能",
+      "format": "baichuan",
       "domains": ["api.baichuan-ai.com"],
       "models": {
-        "baichuan-4":      { "inputPrice": 0.001, "outputPrice": 0.002, "unit": "per_1k" },
-        "baichuan-3-turbo":{ "inputPrice": 0.00025, "outputPrice": 0.0005, "unit": "per_1k" }
+        "baichuan4":      { "inputPrice": 0.01, "outputPrice": 0.01, "unit": "per_1k" },
+        "baichuan3-turbo":{ "inputPrice": 0.002, "outputPrice": 0.002, "unit": "per_1k" }
       }
     },
     "spark": {
       "displayName": "讯飞星火",
       "displayNameZh": "讯飞星火",
-      "format": "xunfei",
-      "domains": ["api.xf-yun.com"],
+      "format": "spark",
+      "domains": ["spark-api.xf-yun.com"],
       "models": {
-        "spark-4.0":  { "inputPrice": 0.001, "outputPrice": 0.001, "unit": "per_1k" },
-        "spark-pro":  { "inputPrice": 0.0005, "outputPrice": 0.0005, "unit": "per_1k" },
-        "spark-v3.5": { "inputPrice": 0.0003, "outputPrice": 0.0003, "unit": "per_1k" },
-        "spark-lite": { "inputPrice": 0, "outputPrice": 0, "unit": "per_1k" }
+        "spark-4.0":     { "inputPrice": 0.01, "outputPrice": 0.01, "unit": "per_1k" },
+        "spark-3.5":     { "inputPrice": 0.005, "outputPrice": 0.005, "unit": "per_1k" },
+        "spark-3.1":     { "inputPrice": 0.003, "outputPrice": 0.003, "unit": "per_1k" },
+        "spark-lite":    { "inputPrice": 0, "outputPrice": 0, "unit": "per_1k" }
       }
     },
     "hunyuan": {
       "displayName": "腾讯混元",
       "displayNameZh": "腾讯混元",
-      "format": "openai",
+      "format": "hunyuan",
       "domains": ["api.hunyuan.cloud.tencent.com"],
       "models": {
-        "hunyuan-turbo": { "inputPrice": 0.0005, "outputPrice": 0.002, "unit": "per_1k" },
-        "hunyuan-pro":   { "inputPrice": 0.0003, "outputPrice": 0.001, "unit": "per_1k" },
-        "hunyuan-lite":  { "inputPrice": 0.00005, "outputPrice": 0.0001, "unit": "per_1k" },
-        "hunyuan-role":  { "inputPrice": 0.0001, "outputPrice": 0.0003, "unit": "per_1k" }
+        "hunyuan-turbo":  { "inputPrice": 0.003, "outputPrice": 0.006, "unit": "per_1k" },
+        "hunyuan-large":  { "inputPrice": 0.004, "outputPrice": 0.008, "unit": "per_1k" },
+        "hunyuan-standard":{ "inputPrice": 0.001, "outputPrice": 0.002, "unit": "per_1k" },
+        "hunyuan-lite":   { "inputPrice": 0, "outputPrice": 0, "unit": "per_1k" }
       }
     },
     "sensenova": {
       "displayName": "商汤日日新",
       "displayNameZh": "商汤日日新",
-      "format": "openai",
+      "format": "sensenova",
       "domains": ["api.sensenova.com.cn"],
       "models": {
-        "sensenova-v5":   { "inputPrice": 0.001, "outputPrice": 0.003, "unit": "per_1k" },
-        "sensenova-v4":   { "inputPrice": 0.0005, "outputPrice": 0.0015, "unit": "per_1k" },
-        "sensenova-lite": { "inputPrice": 0.00015, "outputPrice": 0.00045, "unit": "per_1k" }
+        "sensechat-5.0":   { "inputPrice": 0.002, "outputPrice": 0.002, "unit": "per_1k" },
+        "sensechat-5.5":   { "inputPrice": 0.004, "outputPrice": 0.004, "unit": "per_1k" },
+        "sensechat-turbo": { "inputPrice": 0.001, "outputPrice": 0.001, "unit": "per_1k" }
       }
     },
     "openai": {
@@ -155,29 +155,29 @@
       "format": "openai",
       "domains": ["api.openai.com"],
       "models": {
+        "gpt-5.5":          { "inputPrice": 0.005, "outputPrice": 0.03, "unit": "per_1k" },
+        "gpt-5.4":          { "inputPrice": 0.0025, "outputPrice": 0.015, "unit": "per_1k" },
+        "gpt-5.4-mini":     { "inputPrice": 0.00075, "outputPrice": 0.0045, "unit": "per_1k" },
+        "gpt-5.4-nano":     { "inputPrice": 0.0002, "outputPrice": 0.00125, "unit": "per_1k" },
         "gpt-4o":           { "inputPrice": 0.0025, "outputPrice": 0.01, "unit": "per_1k" },
         "gpt-4o-mini":      { "inputPrice": 0.00015, "outputPrice": 0.0006, "unit": "per_1k" },
         "gpt-4-turbo":      { "inputPrice": 0.01, "outputPrice": 0.03, "unit": "per_1k" },
         "gpt-4":            { "inputPrice": 0.03, "outputPrice": 0.06, "unit": "per_1k" },
-        "gpt-3.5-turbo":    { "inputPrice": 0.0005, "outputPrice": 0.0015, "unit": "per_1k" },
-        "o1":               { "inputPrice": 0.015, "outputPrice": 0.06, "unit": "per_1k" },
-        "o1-mini":          { "inputPrice": 0.003, "outputPrice": 0.012, "unit": "per_1k" },
         "o3-mini":          { "inputPrice": 0.0011, "outputPrice": 0.0044, "unit": "per_1k" },
-        "text-embedding-3-large": { "inputPrice": 0.00013, "outputPrice": 0, "unit": "per_1k" },
-        "text-embedding-3-small": { "inputPrice": 0.00002, "outputPrice": 0, "unit": "per_1k" }
+        "o1":               { "inputPrice": 0.015, "outputPrice": 0.06, "unit": "per_1k" }
       }
     },
     "anthropic": {
-      "displayName": "Anthropic",
-      "displayNameZh": "Anthropic",
+      "displayName": "Anthropic (Claude)",
+      "displayNameZh": "Anthropic (Claude)",
       "format": "anthropic",
       "domains": ["api.anthropic.com"],
       "models": {
-        "claude-3-5-sonnet-20240620": { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
-        "claude-3-opus-20240229":     { "inputPrice": 0.015, "outputPrice": 0.075, "unit": "per_1k" },
-        "claude-3-haiku-20240307":    { "inputPrice": 0.00025, "outputPrice": 0.00125, "unit": "per_1k" },
-        "claude-sonnet-4":            { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
-        "claude-opus-4":              { "inputPrice": 0.015, "outputPrice": 0.075, "unit": "per_1k" }
+        "claude-opus-4.8":    { "inputPrice": 0.005, "outputPrice": 0.025, "unit": "per_1k" },
+        "claude-sonnet-4.6":  { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
+        "claude-sonnet-4":    { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
+        "claude-3.5-sonnet":  { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
+        "claude-3-haiku":     { "inputPrice": 0.00025, "outputPrice": 0.00125, "unit": "per_1k" }
       }
     },
     "google": {
@@ -186,22 +186,115 @@
       "format": "google",
       "domains": ["generativelanguage.googleapis.com"],
       "models": {
-        "gemini-2.5-pro":    { "inputPrice": 0.00125, "outputPrice": 0.01, "unit": "per_1k" },
-        "gemini-2.0-flash":  { "inputPrice": 0.0001, "outputPrice": 0.0004, "unit": "per_1k" },
-        "gemini-2.0-flash-lite": { "inputPrice": 0.000075, "outputPrice": 0.0003, "unit": "per_1k" },
-        "gemini-1.5-pro":    { "inputPrice": 0.00125, "outputPrice": 0.005, "unit": "per_1k" },
-        "gemini-1.5-flash":  { "inputPrice": 0.000075, "outputPrice": 0.0003, "unit": "per_1k" }
+        "gemini-3.5-flash":   { "inputPrice": 0.0015, "outputPrice": 0.009, "unit": "per_1k" },
+        "gemini-3.1-pro":     { "inputPrice": 0.002, "outputPrice": 0.012, "unit": "per_1k" },
+        "gemini-3-flash":     { "inputPrice": 0.0005, "outputPrice": 0.003, "unit": "per_1k" },
+        "gemini-2.5-pro":     { "inputPrice": 0.00125, "outputPrice": 0.01, "unit": "per_1k" },
+        "gemini-2.5-flash":   { "inputPrice": 0.00015, "outputPrice": 0.0006, "unit": "per_1k" }
       }
     },
     "groq": {
       "displayName": "Groq",
       "displayNameZh": "Groq",
-      "format": "openai",
+      "format": "groq",
       "domains": ["api.groq.com"],
       "models": {
-        "llama-3.3-70b-versatile": { "inputPrice": 0.00059, "outputPrice": 0.00079, "unit": "per_1k" },
-        "llama-3.1-8b-instant":    { "inputPrice": 0.00005, "outputPrice": 0.00008, "unit": "per_1k" },
-        "mixtral-8x7b-32768":      { "inputPrice": 0.00024, "outputPrice": 0.00024, "unit": "per_1k" }
+        "llama-4.1-scout":  { "inputPrice": 0.0003, "outputPrice": 0.0004, "unit": "per_1k" },
+        "llama-4.1-maverick":{ "inputPrice": 0.001, "outputPrice": 0.0015, "unit": "per_1k" },
+        "mixtral-8x7b-32768":{ "inputPrice": 0.00024, "outputPrice": 0.00024, "unit": "per_1k" }
+      }
+    },
+    "xai": {
+      "displayName": "xAI (Grok)",
+      "displayNameZh": "xAI (Grok)",
+      "format": "openai",
+      "domains": ["api.x.ai"],
+      "models": {
+        "grok-4.3":        { "inputPrice": 0.00125, "outputPrice": 0.0025, "unit": "per_1k" },
+        "grok-4.1-fast":   { "inputPrice": 0.0002, "outputPrice": 0.0002, "unit": "per_1k" },
+        "grok-4.20":       { "inputPrice": 0.001, "outputPrice": 0.002, "unit": "per_1k" },
+        "grok-vision":     { "inputPrice": 0.002, "outputPrice": 0.004, "unit": "per_1k" }
+      }
+    },
+    "mistral": {
+      "displayName": "Mistral AI",
+      "displayNameZh": "Mistral AI",
+      "format": "mistral",
+      "domains": ["api.mistral.ai"],
+      "models": {
+        "mistral-large-2":    { "inputPrice": 0.002, "outputPrice": 0.006, "unit": "per_1k" },
+        "mistral-small-3":    { "inputPrice": 0.0001, "outputPrice": 0.0003, "unit": "per_1k" },
+        "ministral-3b":       { "inputPrice": 0.00004, "outputPrice": 0.00004, "unit": "per_1k" },
+        "codestral":          { "inputPrice": 0.001, "outputPrice": 0.003, "unit": "per_1k" },
+        "pixtral-large":      { "inputPrice": 0.002, "outputPrice": 0.006, "unit": "per_1k" }
+      }
+    },
+    "together": {
+      "displayName": "Together.ai",
+      "displayNameZh": "Together.ai",
+      "format": "openai",
+      "domains": ["api.together.xyz"],
+      "models": {
+        "deepseek-v3.1":       { "inputPrice": 0.0006, "outputPrice": 0.0017, "unit": "per_1k" },
+        "deepseek-r1":         { "inputPrice": 0.003, "outputPrice": 0.007, "unit": "per_1k" },
+        "meta-llama-3.3-70b":  { "inputPrice": 0.00088, "outputPrice": 0.00088, "unit": "per_1k" },
+        "meta-llama-3.1-405b": { "inputPrice": 0.002, "outputPrice": 0.002, "unit": "per_1k" },
+        "qwen-3.6-plus":       { "inputPrice": 0.0005, "outputPrice": 0.003, "unit": "per_1k" },
+        "gpt-oss-20b":         { "inputPrice": 0.00005, "outputPrice": 0.0002, "unit": "per_1k" },
+        "gpt-oss-120b":        { "inputPrice": 0.00015, "outputPrice": 0.0006, "unit": "per_1k" }
+      }
+    },
+    "fireworks": {
+      "displayName": "Fireworks AI",
+      "displayNameZh": "Fireworks AI",
+      "format": "openai",
+      "domains": ["api.fireworks.ai"],
+      "models": {
+        "llama-v3p3-70b":       { "inputPrice": 0.0007, "outputPrice": 0.0007, "unit": "per_1k" },
+        "llama-v3p1-405b":      { "inputPrice": 0.003, "outputPrice": 0.003, "unit": "per_1k" },
+        "deepseek-v3":          { "inputPrice": 0.0007, "outputPrice": 0.0014, "unit": "per_1k" },
+        "mixtral-8x22b":        { "inputPrice": 0.0009, "outputPrice": 0.0009, "unit": "per_1k" },
+        "qwen-3.5-72b":         { "inputPrice": 0.0005, "outputPrice": 0.001, "unit": "per_1k" }
+      }
+    },
+    "perplexity": {
+      "displayName": "Perplexity AI",
+      "displayNameZh": "Perplexity AI",
+      "format": "openai",
+      "domains": ["api.perplexity.ai"],
+      "models": {
+        "sonar-pro":      { "inputPrice": 0.005, "outputPrice": 0.005, "unit": "per_1k" },
+        "sonar":          { "inputPrice": 0.001, "outputPrice": 0.001, "unit": "per_1k" },
+        "sonar-reasoning":{ "inputPrice": 0.002, "outputPrice": 0.008, "unit": "per_1k" }
+      }
+    },
+    "openrouter": {
+      "displayName": "OpenRouter",
+      "displayNameZh": "OpenRouter",
+      "format": "openai",
+      "domains": ["openrouter.ai"],
+      "models": {
+        "openai/gpt-5.5":               { "inputPrice": 0.005, "outputPrice": 0.03, "unit": "per_1k" },
+        "openai/gpt-5.4":               { "inputPrice": 0.0025, "outputPrice": 0.015, "unit": "per_1k" },
+        "anthropic/claude-opus-4.8":    { "inputPrice": 0.005, "outputPrice": 0.025, "unit": "per_1k" },
+        "anthropic/claude-sonnet-4.6":  { "inputPrice": 0.003, "outputPrice": 0.015, "unit": "per_1k" },
+        "google/gemini-3.1-pro":        { "inputPrice": 0.002, "outputPrice": 0.012, "unit": "per_1k" },
+        "x-ai/grok-4.3":               { "inputPrice": 0.00125, "outputPrice": 0.0025, "unit": "per_1k" },
+        "deepseek/deepseek-v4":         { "inputPrice": 0.00044, "outputPrice": 0.00087, "unit": "per_1k" },
+        "mistralai/mistral-large-2":    { "inputPrice": 0.002, "outputPrice": 0.006, "unit": "per_1k" },
+        "meta-llama/llama-3.3-70b":     { "inputPrice": 0.00088, "outputPrice": 0.00088, "unit": "per_1k" }
+      }
+    },
+    "siliconflow": {
+      "displayName": "硅基流动",
+      "displayNameZh": "硅基流动",
+      "format": "openai",
+      "domains": ["api.siliconflow.cn"],
+      "models": {
+        "Pro/deepseek-ai/DeepSeek-V3":     { "inputPrice": 0.0005, "outputPrice": 0.0015, "unit": "per_1k" },
+        "Qwen/Qwen3.5-72B":                { "inputPrice": 0.0004, "outputPrice": 0.001, "unit": "per_1k" },
+        "Qwen/Qwen3.5-32B":                { "inputPrice": 0.0002, "outputPrice": 0.0005, "unit": "per_1k" },
+        "meta-llama/Llama-3.3-70B":        { "inputPrice": 0.0006, "outputPrice": 0.0006, "unit": "per_1k" }
       }
     }
   }
